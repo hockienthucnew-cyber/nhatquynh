@@ -214,11 +214,14 @@
 }
 .corner {
     position: absolute;
-    width: 260px;    
+    width: 350px;
+	height: auto;
+	object-fit: cover;
     opacity: 0.95;
     border-radius: 10px;
     transition: transform 0.3s ease;
     box-shadow: 0 0 15px rgba(255,255,255,0.3);
+	z-index: 1000;
 }
 .corner.top-left {
     top: 50px;
@@ -226,9 +229,9 @@
     transform: rotate(-5deg) scale(1.1);
 }
 .corner.top-right {
-    top: 90px;
-    right: 200px; 
-    transform: rotate(6deg) scale(1.05);
+    top: 150px;
+    right: 420px;
+    transform: rotate(6deg) scale(1.1);
 }
 .corner.bottom-left {
     bottom: 100px;
@@ -505,4 +508,5 @@
 
 
 </html>
+
 
