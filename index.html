@@ -203,7 +203,7 @@
                 height: 20px;
             }
         }
-	#corner-images {
+#corner-images {
     position: fixed;
     top: 0;
     left: 0;
@@ -214,42 +214,41 @@
 }
 .corner {
     position: absolute;
-    width: 180px;    
+    width: 260px;    
     opacity: 0.95;
+    border-radius: 10px;
     transition: transform 0.3s ease;
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
 }
-
 .corner.top-left {
-    top: 10px;
-    left: 10px;
+    top: 50px;
+    left: 80px;
+    transform: rotate(-5deg) scale(1.1);
 }
-
 .corner.top-right {
-    top: 15px;
-    right: 15px;
-    transform: rotate(-2deg);
+    top: 90px;
+    right: 200px; 
+    transform: rotate(6deg) scale(1.05);
 }
-
 .corner.bottom-left {
-    bottom: 15px;
-    left: 20px;
+    bottom: 100px;
+    left: 80px;
+    transform: rotate(4deg) scale(1.1);
 }
-
 .corner.bottom-right {
-    bottom: 20px;
-    right: 25px;
-    transform: rotate(3deg);
+    bottom: 80px;
+    right: 120px;
+    transform: rotate(-8deg) scale(1.1);
 }
-		@media (max-width:600px) {
+@media (max-width: 600px) {
     .corner {
-        width: 90px;
-        opacity: 0.8;
+        width: 120px;
+        opacity: 0.85;
     }
     .corner.top-left { top: 20px; left: 20px; }
-    .corner.top-right { top: 30px; right: 25px; }
-    .corner.bottom-left { bottom: 40px; left: 25px; }
-    .corner.bottom-right { bottom: 35px; right: 30px; }
-}
+    .corner.top-right { top: 40px; right: 40px; }
+    .corner.bottom-left { bottom: 40px; left: 20px; }
+    .corner.bottom-right { bottom: 30px; right: 30px; }
 }
     </style>
 </head>
@@ -506,3 +505,4 @@
 
 
 </html>
+
